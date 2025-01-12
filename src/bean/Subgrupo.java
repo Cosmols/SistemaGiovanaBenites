@@ -1,6 +1,8 @@
 package bean;
-// Generated 15/12/2024 23:13:59 by Hibernate Tools 4.3.1
+// Generated 12/01/2025 01:56:34 by Hibernate Tools 4.3.1
 
+
+import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -17,9 +19,9 @@ public class Subgrupo  implements java.io.Serializable {
 
 
      private int idsubgrupo;
-     private int grupo;
+     private Integer grupo;
      private String descricao;
-     private double valor;
+     private BigDecimal valor;
 
     public Subgrupo() {
     }
@@ -28,7 +30,7 @@ public class Subgrupo  implements java.io.Serializable {
     public Subgrupo(int idsubgrupo) {
         this.idsubgrupo = idsubgrupo;
     }
-    public Subgrupo(int idsubgrupo, int grupo, String descricao, double valor) {
+    public Subgrupo(int idsubgrupo, Integer grupo, String descricao, BigDecimal valor) {
        this.idsubgrupo = idsubgrupo;
        this.grupo = grupo;
        this.descricao = descricao;
@@ -49,11 +51,11 @@ public class Subgrupo  implements java.io.Serializable {
 
     
     @Column(name="grupo")
-    public int getGrupo() {
+    public Integer getGrupo() {
         return this.grupo;
     }
     
-    public void setGrupo(int grupo) {
+    public void setGrupo(Integer grupo) {
         this.grupo = grupo;
     }
 
@@ -69,11 +71,11 @@ public class Subgrupo  implements java.io.Serializable {
 
     
     @Column(name="valor", precision=10, scale=5)
-    public double getValor() {
+    public BigDecimal getValor() {
         return this.valor;
     }
     
-    public void setValor(double valor) {
+    public void setValor(BigDecimal valor) {
         this.valor = valor;
     }
 

@@ -45,12 +45,11 @@ Contributor(s):
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db_giovana_rodrigues?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
-    <mapping class="bean.GbrPedidos"/>
-    <mapping class="bean.GbrPedidosProdutos"/>
-    <mapping class="bean.GbrCliente"/>
-    <mapping class="bean.Subgrupo"/>
-    <mapping class="bean.GbrProduto"/>
     <mapping class="bean.GbrUsuario"/>
+    <mapping class="bean.GbrPedidos"/>
     <mapping class="bean.GbrVendedor"/>
+    <mapping class="bean.GbrProduto"/>
+    <mapping class="bean.GbrCliente"/>
+    <mapping class="bean.GbrPedidosProdutos"/>
   </session-factory>
 </hibernate-configuration>

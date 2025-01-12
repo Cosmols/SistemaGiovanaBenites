@@ -41,11 +41,10 @@ Contributor(s):
 -->
 <hibernate-reverse-engineering>
   <schema-selection match-catalog="db_giovana_rodrigues"/>
+  <table-filter match-name="gbr_vendedor"/>
   <table-filter match-name="gbr_pedidos_produtos"/>
   <table-filter match-name="gbr_usuario"/>
-  <table-filter match-name="subgrupo"/>
+  <table-filter match-name="gbr_cliente"/>
   <table-filter match-name="gbr_pedidos"/>
   <table-filter match-name="gbr_produto"/>
-  <table-filter match-name="gbr_vendedor"/>
-  <table-filter match-name="gbr_cliente"/>
 </hibernate-reverse-engineering>
